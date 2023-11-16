@@ -115,9 +115,9 @@
 		8428201A2B05E01000DD982A /* TimestampSaverVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				84B3C5C82B061B2B003F791A /* VideoList */,
 				842820522B05F22D00DD982A /* Core */,
-				842820492B05ECB700DD982A /* PlayerFeature */,
+				842820492B05ECB700DD982A /* Player */,
+				84B3C5C82B061B2B003F791A /* VideoList */,
 				8428201B2B05E01000DD982A /* TimestampSaverVideoPlayerApp.swift */,
 				8428201D2B05E01000DD982A /* ContentView.swift */,
 				8428201F2B05E01100DD982A /* Assets.xcassets */,
@@ -152,7 +152,7 @@
 			path = TimestampSaverVideoPlayerUITests;
 			sourceTree = "<group>";
 		};
-		842820492B05ECB700DD982A /* PlayerFeature */ = {
+		842820492B05ECB700DD982A /* Player */ = {
 			isa = PBXGroup;
 			children = (
 				8428204A2B05ED3F00DD982A /* PlayerViewMock.swift */,
@@ -160,7 +160,7 @@
 				8428204C2B05ED3F00DD982A /* PlayerFeature.swift */,
 				8428204D2B05ED3F00DD982A /* PlayerFeatureMock.swift */,
 			);
-			path = PlayerFeature;
+			path = Player;
 			sourceTree = "<group>";
 		};
 		842820522B05F22D00DD982A /* Core */ = {

@@ -14,8 +14,8 @@ struct VideoListView: View {
 
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
-            List(viewStore.list, id: \.self) { number in
-                Text("some, \(number)")
+            List(viewStore.urls, id: \.self) { url in
+                Text("\(url)")
             }
             .onDrop(of: [.fileURL],
                     isTargeted: viewStore.binding(get: \.isTargeted,

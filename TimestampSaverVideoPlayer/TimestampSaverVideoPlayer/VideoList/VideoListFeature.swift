@@ -22,7 +22,7 @@ struct VideoListFeature {
                 else {
                     return .none
                 }
-                state.list.append(url)
+                state.urls.append(url)
                 return .none
 
             case let .isTargetedChanged(newValue):
@@ -34,7 +34,7 @@ struct VideoListFeature {
 
     struct State: Equatable {
         var isTargeted = false
-        var list: [URL] = []
+        var urls: [URL] = []
     }
 
     enum Action: Equatable {

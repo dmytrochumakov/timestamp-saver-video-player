@@ -11,11 +11,8 @@ import AVKit
 @Reducer
 struct PlayerFeature {
 
-    static let downloadsDirectory = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
-    static let filePath = downloadsDirectory.appendingPathComponent("Hands-On+With+Sourcery.mp4")
-
-    let key: String = "currentTimeKey"
-    let userDefaults: UserDefaults = .standard
+    private let key: String = "currentTimeKey"
+    private let userDefaults: UserDefaults = .standard
 
     var body: some ReducerOf<Self> {
         Reduce { state, action in
@@ -47,7 +44,7 @@ struct PlayerFeature {
     }
 
     struct State: Equatable {
-        var player: AVPlayer? = AVPlayer(url: PlayerFeature.filePath)
+        var player: AVPlayer? = nil
         var isPlaying: Bool = false
     }
 
