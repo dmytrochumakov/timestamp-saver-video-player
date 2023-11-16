@@ -10,7 +10,7 @@ import AVKit
 
 struct PlayerModel: Codable, Hashable {
     let url: URL
-    let time: CMTime
+    var time: CMTime
 }
 
 @Reducer
@@ -31,7 +31,11 @@ struct PlayerFeature {
                         let currentTime = state.player?.currentTime()
                     {
                         var models = retrievePlayerModels()
-                        models.append(.init(url: url, time: currentTime))
+                        if exists(url) {
+                            models[index(by: url)].time = currentTime
+                        } else {
+                            models.append(.init(url: url, time: currentTime))
+                        }
                         userDefaults.setValue(try? JSONEncoder().encode(models), forKey: key)
                     }
                 } else {
@@ -45,8 +49,8 @@ struct PlayerFeature {
                 return .none
 
             case .onSelect(let url):
-                let playerModel = retrievePlayerModels().first(where: { $0.url == url })
                 setURLAndPlayer(url, &state)
+                let playerModel = retrievePlayerModels().first(where: { $0.url == url })
                 if playerModel?.url == url {
                     state.player?.seek(to: playerModel!.time)
                 }
@@ -88,6 +92,14 @@ struct PlayerFeature {
             return []
         }
         return playerModels
+    }
+
+    private func exists(_ url: URL) -> Bool {
+        retrievePlayerModels().contains(where: { $0.url == url })
+    }
+
+    private func index(by url: URL) -> Int {
+        retrievePlayerModels().firstIndex(where: { $0.url == url })!
     }
 
 }
