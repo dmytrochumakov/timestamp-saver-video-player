@@ -16,7 +16,9 @@ struct PlayerView: View {
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             VStack(spacing: 0) {
-                VideoPlayer(player: viewStore.player)
+                if viewStore.player != nil {
+                    VideoPlayer(player: viewStore.player)
+                }
                 Button {
                     viewStore.send(.buttonTapped)
                 } label: {
@@ -24,9 +26,6 @@ struct PlayerView: View {
                         .padding()
                 }
             }
-        }
-        .onAppear {
-            store.send(.onAppear)
         }
     }
 

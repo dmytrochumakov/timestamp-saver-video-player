@@ -24,6 +24,7 @@
 		84B3C5CE2B061B3A003F791A /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5CA2B061B3A003F791A /* VideoListView.swift */; };
 		84B3C5CF2B061B3A003F791A /* VideoListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5CB2B061B3A003F791A /* VideoListFeature.swift */; };
 		84B3C5D02B061B3A003F791A /* VideoListFeatureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5CC2B061B3A003F791A /* VideoListFeatureMock.swift */; };
+		84B4AAC92B064DC800020819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4AAC82B064DC800020819 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		84B3C5CA2B061B3A003F791A /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
 		84B3C5CB2B061B3A003F791A /* VideoListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListFeature.swift; sourceTree = "<group>"; };
 		84B3C5CC2B061B3A003F791A /* VideoListFeatureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListFeatureMock.swift; sourceTree = "<group>"; };
+		84B4AAC82B064DC800020819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				8428201F2B05E01100DD982A /* Assets.xcassets */,
 				842820242B05E01100DD982A /* TimestampSaverVideoPlayer.entitlements */,
 				842820212B05E01100DD982A /* Preview Content */,
+				84B4AAC82B064DC800020819 /* AppDelegate.swift */,
 			);
 			path = TimestampSaverVideoPlayer;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B4AAC92B064DC800020819 /* AppDelegate.swift in Sources */,
 				8428201E2B05E01000DD982A /* ContentView.swift in Sources */,
 				8428204E2B05ED3F00DD982A /* PlayerViewMock.swift in Sources */,
 				84B3C5CD2B061B3A003F791A /* VideoListViewMock.swift in Sources */,
