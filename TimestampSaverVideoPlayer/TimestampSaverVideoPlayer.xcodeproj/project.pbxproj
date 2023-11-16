@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8428201C2B05E01000DD982A /* TimestampSaverVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428201B2B05E01000DD982A /* TimestampSaverVideoPlayerApp.swift */; };
+		8428201E2B05E01000DD982A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428201D2B05E01000DD982A /* ContentView.swift */; };
+		842820202B05E01100DD982A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8428201F2B05E01100DD982A /* Assets.xcassets */; };
+		842820232B05E01100DD982A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842820222B05E01100DD982A /* Preview Assets.xcassets */; };
+		8428202E2B05E01100DD982A /* TimestampSaverVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428202D2B05E01100DD982A /* TimestampSaverVideoPlayerTests.swift */; };
+		842820382B05E01100DD982A /* TimestampSaverVideoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842820372B05E01100DD982A /* TimestampSaverVideoPlayerUITests.swift */; };
+		8428203A2B05E01100DD982A /* TimestampSaverVideoPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842820392B05E01100DD982A /* TimestampSaverVideoPlayerUITestsLaunchTests.swift */; };
+		842820482B05EC8D00DD982A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 842820472B05EC8D00DD982A /* ComposableArchitecture */; };
+		8428204E2B05ED3F00DD982A /* PlayerViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428204A2B05ED3F00DD982A /* PlayerViewMock.swift */; };
+		8428204F2B05ED3F00DD982A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428204B2B05ED3F00DD982A /* PlayerView.swift */; };
+		842820502B05ED3F00DD982A /* PlayerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428204C2B05ED3F00DD982A /* PlayerFeature.swift */; };
+		842820512B05ED3F00DD982A /* PlayerFeatureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428204D2B05ED3F00DD982A /* PlayerFeatureMock.swift */; };
+		842820542B05F23600DD982A /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842820532B05F23600DD982A /* AppStore.swift */; };
+		84B3C5CD2B061B3A003F791A /* VideoListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5C92B061B3A003F791A /* VideoListViewMock.swift */; };
+		84B3C5CE2B061B3A003F791A /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5CA2B061B3A003F791A /* VideoListView.swift */; };
+		84B3C5CF2B061B3A003F791A /* VideoListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5CB2B061B3A003F791A /* VideoListFeature.swift */; };
+		84B3C5D02B061B3A003F791A /* VideoListFeatureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C5CC2B061B3A003F791A /* VideoListFeatureMock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8428202A2B05E01100DD982A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842820102B05E00F00DD982A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842820172B05E00F00DD982A;
+			remoteInfo = TimestampSaverVideoPlayer;
+		};
+		842820342B05E01100DD982A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842820102B05E00F00DD982A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842820172B05E00F00DD982A;
+			remoteInfo = TimestampSaverVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		842820182B05E00F00DD982A /* TimestampSaverVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimestampSaverVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8428201B2B05E01000DD982A /* TimestampSaverVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampSaverVideoPlayerApp.swift; sourceTree = "<group>"; };
+		8428201D2B05E01000DD982A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8428201F2B05E01100DD982A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		842820222B05E01100DD982A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		842820242B05E01100DD982A /* TimestampSaverVideoPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimestampSaverVideoPlayer.entitlements; sourceTree = "<group>"; };
+		842820292B05E01100DD982A /* TimestampSaverVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimestampSaverVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8428202D2B05E01100DD982A /* TimestampSaverVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampSaverVideoPlayerTests.swift; sourceTree = "<group>"; };
+		842820332B05E01100DD982A /* TimestampSaverVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimestampSaverVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		842820372B05E01100DD982A /* TimestampSaverVideoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampSaverVideoPlayerUITests.swift; sourceTree = "<group>"; };
+		842820392B05E01100DD982A /* TimestampSaverVideoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampSaverVideoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8428204A2B05ED3F00DD982A /* PlayerViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewMock.swift; sourceTree = "<group>"; };
+		8428204B2B05ED3F00DD982A /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		8428204C2B05ED3F00DD982A /* PlayerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFeature.swift; sourceTree = "<group>"; };
+		8428204D2B05ED3F00DD982A /* PlayerFeatureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFeatureMock.swift; sourceTree = "<group>"; };
+		842820532B05F23600DD982A /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		84B3C5C92B061B3A003F791A /* VideoListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewMock.swift; sourceTree = "<group>"; };
+		84B3C5CA2B061B3A003F791A /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+		84B3C5CB2B061B3A003F791A /* VideoListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListFeature.swift; sourceTree = "<group>"; };
+		84B3C5CC2B061B3A003F791A /* VideoListFeatureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListFeatureMock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		842820152B05E00F00DD982A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842820482B05EC8D00DD982A /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842820262B05E01100DD982A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842820302B05E01100DD982A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8428200F2B05E00F00DD982A = {
+			isa = PBXGroup;
+			children = (
+				8428201A2B05E01000DD982A /* TimestampSaverVideoPlayer */,
+				8428202C2B05E01100DD982A /* TimestampSaverVideoPlayerTests */,
+				842820362B05E01100DD982A /* TimestampSaverVideoPlayerUITests */,
+				842820192B05E00F00DD982A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		842820192B05E00F00DD982A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				842820182B05E00F00DD982A /* TimestampSaverVideoPlayer.app */,
+				842820292B05E01100DD982A /* TimestampSaverVideoPlayerTests.xctest */,
+				842820332B05E01100DD982A /* TimestampSaverVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8428201A2B05E01000DD982A /* TimestampSaverVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84B3C5C82B061B2B003F791A /* VideoList */,
+				842820522B05F22D00DD982A /* Core */,
+				842820492B05ECB700DD982A /* PlayerFeature */,
+				8428201B2B05E01000DD982A /* TimestampSaverVideoPlayerApp.swift */,
+				8428201D2B05E01000DD982A /* ContentView.swift */,
+				8428201F2B05E01100DD982A /* Assets.xcassets */,
+				842820242B05E01100DD982A /* TimestampSaverVideoPlayer.entitlements */,
+				842820212B05E01100DD982A /* Preview Content */,
+			);
+			path = TimestampSaverVideoPlayer;
+			sourceTree = "<group>";
+		};
+		842820212B05E01100DD982A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				842820222B05E01100DD982A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8428202C2B05E01100DD982A /* TimestampSaverVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8428202D2B05E01100DD982A /* TimestampSaverVideoPlayerTests.swift */,
+			);
+			path = TimestampSaverVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		842820362B05E01100DD982A /* TimestampSaverVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				842820372B05E01100DD982A /* TimestampSaverVideoPlayerUITests.swift */,
+				842820392B05E01100DD982A /* TimestampSaverVideoPlayerUITestsLaunchTests.swift */,
+			);
+			path = TimestampSaverVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+		842820492B05ECB700DD982A /* PlayerFeature */ = {
+			isa = PBXGroup;
+			children = (
+				8428204A2B05ED3F00DD982A /* PlayerViewMock.swift */,
+				8428204B2B05ED3F00DD982A /* PlayerView.swift */,
+				8428204C2B05ED3F00DD982A /* PlayerFeature.swift */,
+				8428204D2B05ED3F00DD982A /* PlayerFeatureMock.swift */,
+			);
+			path = PlayerFeature;
+			sourceTree = "<group>";
+		};
+		842820522B05F22D00DD982A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				842820532B05F23600DD982A /* AppStore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84B3C5C82B061B2B003F791A /* VideoList */ = {
+			isa = PBXGroup;
+			children = (
+				84B3C5C92B061B3A003F791A /* VideoListViewMock.swift */,
+				84B3C5CA2B061B3A003F791A /* VideoListView.swift */,
+				84B3C5CB2B061B3A003F791A /* VideoListFeature.swift */,
+				84B3C5CC2B061B3A003F791A /* VideoListFeatureMock.swift */,
+			);
+			path = VideoList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		842820172B05E00F00DD982A /* TimestampSaverVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8428203D2B05E01100DD982A /* Build configuration list for PBXNativeTarget "TimestampSaverVideoPlayer" */;
+			buildPhases = (
+				842820142B05E00F00DD982A /* Sources */,
+				842820152B05E00F00DD982A /* Frameworks */,
+				842820162B05E00F00DD982A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimestampSaverVideoPlayer;
+			packageProductDependencies = (
+				842820472B05EC8D00DD982A /* ComposableArchitecture */,
+			);
+			productName = TimestampSaverVideoPlayer;
+			productReference = 842820182B05E00F00DD982A /* TimestampSaverVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		842820282B05E01100DD982A /* TimestampSaverVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842820402B05E01100DD982A /* Build configuration list for PBXNativeTarget "TimestampSaverVideoPlayerTests" */;
+			buildPhases = (
+				842820252B05E01100DD982A /* Sources */,
+				842820262B05E01100DD982A /* Frameworks */,
+				842820272B05E01100DD982A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8428202B2B05E01100DD982A /* PBXTargetDependency */,
+			);
+			name = TimestampSaverVideoPlayerTests;
+			productName = TimestampSaverVideoPlayerTests;
+			productReference = 842820292B05E01100DD982A /* TimestampSaverVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		842820322B05E01100DD982A /* TimestampSaverVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842820432B05E01100DD982A /* Build configuration list for PBXNativeTarget "TimestampSaverVideoPlayerUITests" */;
+			buildPhases = (
+				8428202F2B05E01100DD982A /* Sources */,
+				842820302B05E01100DD982A /* Frameworks */,
+				842820312B05E01100DD982A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				842820352B05E01100DD982A /* PBXTargetDependency */,
+			);
+			name = TimestampSaverVideoPlayerUITests;
+			productName = TimestampSaverVideoPlayerUITests;
+			productReference = 842820332B05E01100DD982A /* TimestampSaverVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		842820102B05E00F00DD982A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					842820172B05E00F00DD982A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					842820282B05E01100DD982A = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 842820172B05E00F00DD982A;
+					};
+					842820322B05E01100DD982A = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 842820172B05E00F00DD982A;
+					};
+				};
+			};
+			buildConfigurationList = 842820132B05E00F00DD982A /* Build configuration list for PBXProject "TimestampSaverVideoPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8428200F2B05E00F00DD982A;
+			packageReferences = (
+				842820462B05EC8D00DD982A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 842820192B05E00F00DD982A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				842820172B05E00F00DD982A /* TimestampSaverVideoPlayer */,
+				842820282B05E01100DD982A /* TimestampSaverVideoPlayerTests */,
+				842820322B05E01100DD982A /* TimestampSaverVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		842820162B05E00F00DD982A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842820232B05E01100DD982A /* Preview Assets.xcassets in Resources */,
+				842820202B05E01100DD982A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842820272B05E01100DD982A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842820312B05E01100DD982A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		842820142B05E00F00DD982A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8428201E2B05E01000DD982A /* ContentView.swift in Sources */,
+				8428204E2B05ED3F00DD982A /* PlayerViewMock.swift in Sources */,
+				84B3C5CD2B061B3A003F791A /* VideoListViewMock.swift in Sources */,
+				842820502B05ED3F00DD982A /* PlayerFeature.swift in Sources */,
+				84B3C5CF2B061B3A003F791A /* VideoListFeature.swift in Sources */,
+				842820512B05ED3F00DD982A /* PlayerFeatureMock.swift in Sources */,
+				84B3C5D02B061B3A003F791A /* VideoListFeatureMock.swift in Sources */,
+				84B3C5CE2B061B3A003F791A /* VideoListView.swift in Sources */,
+				8428201C2B05E01000DD982A /* TimestampSaverVideoPlayerApp.swift in Sources */,
+				842820542B05F23600DD982A /* AppStore.swift in Sources */,
+				8428204F2B05ED3F00DD982A /* PlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842820252B05E01100DD982A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8428202E2B05E01100DD982A /* TimestampSaverVideoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8428202F2B05E01100DD982A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8428203A2B05E01100DD982A /* TimestampSaverVideoPlayerUITestsLaunchTests.swift in Sources */,
+				842820382B05E01100DD982A /* TimestampSaverVideoPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8428202B2B05E01100DD982A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842820172B05E00F00DD982A /* TimestampSaverVideoPlayer */;
+			targetProxy = 8428202A2B05E01100DD982A /* PBXContainerItemProxy */;
+		};
+		842820352B05E01100DD982A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842820172B05E00F00DD982A /* TimestampSaverVideoPlayer */;
+			targetProxy = 842820342B05E01100DD982A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8428203B2B05E01100DD982A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8428203C2B05E01100DD982A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8428203E2B05E01100DD982A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimestampSaverVideoPlayer/TimestampSaverVideoPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimestampSaverVideoPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = S37PCWVC2W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrochumakov.TimestampSaverVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8428203F2B05E01100DD982A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimestampSaverVideoPlayer/TimestampSaverVideoPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimestampSaverVideoPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = S37PCWVC2W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrochumakov.TimestampSaverVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		842820412B05E01100DD982A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S37PCWVC2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrochumakov.TimestampSaverVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimestampSaverVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimestampSaverVideoPlayer";
+			};
+			name = Debug;
+		};
+		842820422B05E01100DD982A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S37PCWVC2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrochumakov.TimestampSaverVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimestampSaverVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimestampSaverVideoPlayer";
+			};
+			name = Release;
+		};
+		842820442B05E01100DD982A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S37PCWVC2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrochumakov.TimestampSaverVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TimestampSaverVideoPlayer;
+			};
+			name = Debug;
+		};
+		842820452B05E01100DD982A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S37PCWVC2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrochumakov.TimestampSaverVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TimestampSaverVideoPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		842820132B05E00F00DD982A /* Build configuration list for PBXProject "TimestampSaverVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8428203B2B05E01100DD982A /* Debug */,
+				8428203C2B05E01100DD982A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8428203D2B05E01100DD982A /* Build configuration list for PBXNativeTarget "TimestampSaverVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8428203E2B05E01100DD982A /* Debug */,
+				8428203F2B05E01100DD982A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		842820402B05E01100DD982A /* Build configuration list for PBXNativeTarget "TimestampSaverVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842820412B05E01100DD982A /* Debug */,
+				842820422B05E01100DD982A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		842820432B05E01100DD982A /* Build configuration list for PBXNativeTarget "TimestampSaverVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842820442B05E01100DD982A /* Debug */,
+				842820452B05E01100DD982A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		842820462B05EC8D00DD982A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		842820472B05EC8D00DD982A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 842820462B05EC8D00DD982A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 842820102B05E00F00DD982A /* Project object */;
+}
