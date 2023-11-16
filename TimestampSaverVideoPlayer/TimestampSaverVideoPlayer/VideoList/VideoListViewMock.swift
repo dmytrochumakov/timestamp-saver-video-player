@@ -12,7 +12,7 @@ extension VideoListView {
     static var mock: Self {
         .init(store: .init(initialState: .mock) {
             VideoListFeature()._printChanges()
-        }, didSelectURL: { _ in })
+        }, onSelectURL: { _ in }, onDeleteURL: { _ in })
     }
 
 }

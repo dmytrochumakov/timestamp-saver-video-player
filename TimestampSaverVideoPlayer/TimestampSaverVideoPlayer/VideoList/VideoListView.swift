@@ -11,13 +11,21 @@ import ComposableArchitecture
 struct VideoListView: View {
     
     let store: StoreOf<VideoListFeature>
-    let didSelectURL: (URL) -> Void
+    let onSelectURL: (URL) -> Void
+    let onDeleteURL: (URL) -> Void
 
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             List(viewStore.models) { model in
-                Button("\(model.url)") {
-                    didSelectURL(model.url)
+                HStack {
+                    Button("\(model.url.lastPathComponent)") {
+                        onSelectURL(model.url)
+                    }
+                    Spacer()
+                    Button("delete") {
+                        viewStore.send(.onDelete(model.url))
+                        onDeleteURL(model.url)
+                    }
                 }
             }
         }

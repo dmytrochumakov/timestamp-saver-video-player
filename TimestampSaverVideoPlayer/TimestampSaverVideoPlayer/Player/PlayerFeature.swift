@@ -55,6 +55,14 @@ struct PlayerFeature {
                     state.player?.seek(to: playerModel!.time)
                 }
                 return .none
+
+            case let .onDelete(url):
+                if exists(url) {
+                    var models = retrievePlayerModels()
+                    models.remove(at: index(by: url))
+                    userDefaults.setValue(try? JSONEncoder().encode(models), forKey: key)
+                }
+                return .none
             }
         }
     }
@@ -69,6 +77,7 @@ struct PlayerFeature {
         case buttonTapped
         case onDrop(_ url: URL)
         case onSelect(_ url: URL)
+        case onDelete(_ url: URL)
     }
 
     private func setURL(_ url: URL, _ state: inout State) {

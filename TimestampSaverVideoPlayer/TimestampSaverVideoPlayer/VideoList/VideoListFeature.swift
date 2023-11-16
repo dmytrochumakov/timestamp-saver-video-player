@@ -43,6 +43,20 @@ struct VideoListFeature {
                 }
                 state.models = models
                 return .none
+
+            case let .onDelete(url):
+                guard
+                    let data = userDefaults.data(forKey: key),
+                    var models = try? JSONDecoder().decode([VideoListModel].self, from: data),
+                    let index = models.firstIndex(where: { $0.url == url })
+                else {
+                    return .none
+                }
+                models.remove(at: index)
+                state.models.remove(at: index)
+                userDefaults.set(try? JSONEncoder().encode(state.models),
+                                 forKey: key)
+                return .none
             }
         }
     }
@@ -56,6 +70,7 @@ struct VideoListFeature {
         case onDrop(_ url: URL)
         case isTargetedChanged(_ newValue: Bool)
         case onAppear
+        case onDelete(_ url: URL)
     }
 
 }

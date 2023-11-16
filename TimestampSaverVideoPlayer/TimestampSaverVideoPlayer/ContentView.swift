@@ -16,7 +16,8 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             VideoListView(store: appStore.videoListStore,
-                          didSelectURL: { appStore.playerStore.send(.onSelect($0)) })
+                          onSelectURL: { appStore.playerStore.send(.onSelect($0)) }, 
+                          onDeleteURL: { appStore.playerStore.send(.onDelete($0)) })
         } detail: {
             PlayerView(store: appStore.playerStore)
         }
